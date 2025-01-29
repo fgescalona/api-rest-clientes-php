@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Clients List</h1>
+        
+        <form id="client-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+            
+            <label for="telephone">Phone:</label>
+            <input type="tel" id="telephone" required>
+            
+            <button type="submit">Add Client</button>
+        </form>
+
+        <h2>Clients List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="client-list"></tbody>
+        </table>
+    </div>
+
+    <script src="public/app.js"></script>
+</body>
+</html>
